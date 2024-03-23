@@ -1,0 +1,7 @@
+secret_word = "sorry"
+guess = ""
+
+while secret_word != guess:
+    guess = input("Enter guess: ")
+
+print("You win!")
