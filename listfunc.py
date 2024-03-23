@@ -1,0 +1,15 @@
+friend = ['kevin','karen','karen','jim']
+lucky_number=[2,34,4,56,78,3,8,6]
+friend.extend(lucky_number)
+print(friend)
+lucky_number.sort()
+print(friend)
+friend.append('shaon')
+friend.insert(1, 'shaon')
+print(friend)
+friend.remove('jim')
+print(friend)
+friend.clear()
+print(friend)
+print(friend.index('shaon'))
+print(friend.count)
