@@ -1,7 +1,27 @@
-secret_word = "sorry"
-guess = ""
+def play_game():    #to loop the entire game
+    
+    #original game
+    secret_word = "shaon"
+    guess = ""
+    guess_count = 0
+    out_of_guess = False
+    while guess != secret_word and not out_of_guess:
+        if guess_count < 3:
+            guess = input("Guess the word:")
+            guess_count += 1  
+        else:
+            out_of_guess = True
+    if out_of_guess:
+        print("Out of guesses, You lose!")
+    else:
+        print('You win!')
 
-while secret_word != guess:
-    guess = input("Enter guess: ")
-
-print("You win!")
+#again play loop
+play_again = True
+while play_again:
+    play_game()
+    choice = input("Do you want to play again?: ")
+    if choice.lower() == "yes":
+        play_again = True
+    else:
+        print('Bye bye')
