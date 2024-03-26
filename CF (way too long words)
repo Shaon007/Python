@@ -1,0 +1,11 @@
+s=input()
+ss=""
+n=len(s)
+if n<10:
+    print(s)
+else:
+    ss +=s[0]
+    #ss+=len(s[1:n-2])
+    st=s[n-1]
+    print(ss,n-2,st,sep="")
+
