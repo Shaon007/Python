@@ -1,0 +1,7 @@
+def power(base, pow):
+    result = 1
+    for index in range(pow):    #loop through the range of pow
+        result = result * base  #keep mul until pow
+    return result              
+
+print(power(2,3))
